@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --margin-01: 8px;
+    --margin-h: calc(var(--margin-01) * 0.5);
+    --margin-q: calc(var(--margin-01) * 0.25);
+    --margin-02: calc(var(--margin-01) * 2);
+    --margin-03: calc(var(--margin-01) * 3);
+    --margin-04: calc(var(--margin-01) * 4);
+    --margin-05: calc(var(--margin-01) * 5);
+    --margin-06: calc(var(--margin-01) * 6);
+    --margin-07: calc(var(--margin-01) * 7);
+    --margin-08: calc(var(--margin-01) * 8);
+    --margin-09: calc(var(--margin-01) * 9);
+    --margin-10: calc(var(--margin-01) * 10);
+
+    --color-blue1:#1194E8;
+    --color-blue2:  #1D7DFF;
+    --color-blue3: #5ddfff;
+    --color-yellow:  #ffc400;
+    --color-purple: #9500fa;
+    --color-green: #13FFD4;
+    --color-black: black;
+    --color-white: white;
+}
+
+body
+{
+    background-color: var(--color-blue1); 
+    min-width: 1000px;
+    display: flex;
+    flex-flow:column;
+    min-height: 100vh;
+    align-items: center;
+
+    padding: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
+}
+
+h1
+{
+    margin: 0;
+    font-family: 'Holtwood One SC', serif;
+    color: var(--color-blue3);
+    text-shadow: 3px 3px rgb(2, 60, 167);
+    font-size: 70px;
+}
+
+h2
+{
+    margin: 0;
+    color: var(--color-yellow);
+    text-shadow: 2px 2px 5px rgb(196, 143, 0);
+    font-family: 'Patrick Hand', cursive;
+    font-size: 45px;
+}
+#Wrapper
+{
+    flex-grow: 1;
+    margin: auto;
+    
+    width: 100%;
+
+    display: flex;
+    flex-flow:row;
+    
+    
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+div
+{
+    align-items: center;
+    width: 50%;
+    max-height: 400px;
+
+    height: auto;
+}
+
+.buttons
+{
+    display: flex;
+    width: 50%;
+    min-height: 400px;
+    flex-flow: column;
+
+    justify-content: space-between;
+}
+
+
+img
+{
+    width: 420px;
+    height: 420px;
+}
+
+#footer
+{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow:row;
+}
+
+button
+{
+    align-items: center;
+}
+
+.social1, .social2
+{
+    width: 50px;
+    height: 50px;
+
+}
+
+.social1
+{
+    margin-right: 60px;
+}
+
+.social2
+{
+    
+    margin-left: 60px;
+}
+.b1
+{
+    margin-right: 40px;
+}
+
+.b2
+{
+    margin-left: 40px;
+}
+
+
+.b1, .b2
+{
+    background-color: var(--color-purple);
+    box-shadow: 3px 3px 5px rgb(82, 0, 158);
+    border-style: none;
+    border-radius: 30px;
+    padding: 20px;
+
+    font-size: 30px;
+    color: var(--color-white);
+    font-family: 'Patrick Hand', cursive;
+}
