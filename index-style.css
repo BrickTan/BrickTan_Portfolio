@@ -118,7 +118,15 @@ button
 {
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 
+}
+
+.social1 :hover, .social2 :hover
+{
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .social1
@@ -126,9 +134,10 @@ button
     margin-right: 60px;
 }
 
+
+
 .social2
 {
-    
     margin-left: 60px;
 }
 .b1
@@ -142,6 +151,14 @@ button
 }
 
 
+.b2 :hover
+{
+    transform: scale();
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
 .b1, .b2
 {
     background-color: var(--color-purple);
@@ -153,4 +170,7 @@ button
     font-size: 30px;
     color: var(--color-white);
     font-family: 'Patrick Hand', cursive;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
