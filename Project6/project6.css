@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --margin-01: 8px;
+    --margin-h: calc(var(--margin-01) * 0.5);
+    --margin-q: calc(var(--margin-01) * 0.25);
+    --margin-02: calc(var(--margin-01) * 2);
+    --margin-03: calc(var(--margin-01) * 3);
+    --margin-04: calc(var(--margin-01) * 4);
+    --margin-05: calc(var(--margin-01) * 5);
+    --margin-06: calc(var(--margin-01) * 6);
+    --margin-07: calc(var(--margin-01) * 7);
+    --margin-08: calc(var(--margin-01) * 8);
+    --margin-09: calc(var(--margin-01) * 9);
+    --margin-10: calc(var(--margin-01) * 10);
+
+    --color-blue1:#1194E8;
+    --color-wrapper:  rgba(206, 168, 0, 0.404);
+    --color-blue2: white;
+    --color-blue3: #5ddfff;
+    --color-yellow: #ffc400;
+    --color-purple: #9500fa;
+    --color-green: #13FFD4;
+    --color-black: black;
+    --color-white: white;
+}
+
+body
+{
+    background-color: var(--color-white); 
+
+    align-items: center;
+    min-height: 150vh;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    min-width:82vh;
+
+    padding: 0;
+    margin: 0
+}
+
+body.-dark
+{
+    --color-yellow:  black;
+    --color-white: rgb(134, 134, 134);
+    --color-wrapper:  rgba(32, 32, 32, 0.247);
+    --color-blue2: white;
+}
+
+header
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-yellow);
+
+    padding-top: var(--margin-04);
+    padding-bottom: var(--margin-04);
+
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.n1, #dark-mode
+{
+    width: 50px;
+    height: auto;
+    padding: 0;
+
+    padding: 0;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 30px;
+
+    transition: all 0.2s ease;
+}
+
+.n1 :hover, #dark-mode :hover
+{
+    transform: scale(1.5);
+}
+
+.n1 img, #dark-mode img
+{
+    width: 50px;
+    height: auto;
+}
+
+#Wrapper
+{
+    padding-top: var(--margin-03);
+    background-color: var(--color-wrapper);
+    flex-grow: 1;
+    margin: auto;
+    
+    width:50%;
+
+    display: flex;
+    flex-flow: column;  
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    text-align: center;
+    font-family:  'Balsamiq Sans', cursive;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--color-blue2);
+}
+
+section
+{
+    width: 100%;
+}
+.project_gallery
+{
+    position: relative;
+    top:20px; 
+    left: 0%; 
+    width: 100%; 
+    height: 500px;
+    background: none;
+}
+
+.slide
+{
+    position: absolute;
+    top: 10px; left: 10px; right: 10px; bottom: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    background: black;
+    opacity: 1;
+    transition: 0.2s ease all;
+}
+
+.slide-hide
+{
+    position: absolute;
+    top: 10px; left: 10px; right: 10px; bottom: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    background: black;
+    opacity: 0;
+    transition: 0.2s ease all;
+}
+
+.img-g
+{
+    height: 100%; width: 100%;
+}
+
+.info
+{
+    padding: 0;
+    margin-top: var(--margin-07);
+    margin-bottom: var(--margin-07);
+}
+
+
+p
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    padding-left: var(--margin-03);
+    color:var(--color-blue2);
+    text-shadow: 1.5px 1.5px rgb(0, 0, 0);
+    
+}
+
+.l1, .l2
+{
+    width: 90px;
+    height: auto;
+    padding: 0;
+
+    padding: 0;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.l1
+{
+    margin-left: var(--margin-08);
+}
+
+.l2
+{
+    margin-right: var(--margin-08);
+}
+
+
+.l1 img, .l2 img
+{
+    width: 90px;
+    height: auto;
+}
+
+#footer
+{   
+    padding-top: var(--margin-03);
+    padding-bottom: var(--margin-03);
+    background-color: var(--color-yellow);
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 100%;
+}
+
+.s1, .s2
+{
+    width: 70px;
+    height: auto;
+    padding: 0;
+
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.s1 :hover, .s2 :hover
+{
+    transform: scale(1.5);
+}
+
+
+
+.s1 img, .s2 img
+{
+    width: 70px;
+    height: auto;
+}
+
+.s1
+{
+    margin-left: 25%;
+}
+
+.s2{
+    margin-right: 25%;
+}
