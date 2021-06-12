@@ -150,6 +150,11 @@ button
     margin-left: 40px;
 }
 
+.b3
+{
+    margin-left: 40px;
+}
+
 
 .b2 :hover
 {
@@ -158,14 +163,23 @@ button
 }
 
 
-
-.b1, .b2
+.go
+{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow:column;
+    margin-top: 20px;
+}
+.b1, .b2, .b3
 {
     background-color: var(--color-purple);
     box-shadow: 3px 3px 5px rgb(82, 0, 158);
     border-style: none;
     border-radius: 30px;
-    padding: 20px;
+    margin: 0px;
+    margin-top: var(--margin-06);
+    padding: 10px;
 
     font-size: 30px;
     color: var(--color-white);
