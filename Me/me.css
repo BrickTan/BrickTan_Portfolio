@@ -29,7 +29,7 @@
 
 body
 {
-    background-color: var(--color-blue3); 
+    background-color: var(--color-white); 
     
     align-items: center;
     min-height: 100vh;
@@ -131,17 +131,24 @@ body.-dark
 
 h1
 {
-    font-family: 'Balsamiq Sans', cursive;
-    font-size: 30px;
+    font-family: 'Passion One', cursive;
+    font-size: 35px;
     text-align: center;
-    color: var(--color-purple);
+    color: var(--color-yellow);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 p
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     text-align: justify;
+}
+
+.descripcion
+{
+    margin-bottom: var(--margin-07);
 }
 
 .s1, .s2

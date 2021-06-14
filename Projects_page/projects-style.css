@@ -29,7 +29,7 @@
 
 body
 {
-    background-color: var(--color-blue3); 
+    background-color: color; 
     
     align-items: center;
     min-height: 100vh;
@@ -40,6 +40,60 @@ body
 
     padding: 0;
     margin: 0
+}
+
+.container{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 80px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border-style: solid;
+    border-width: 6px;
+    padding: 0px; 
+  }
+  
+div video{
+	position: relative;
+    width: 100%;
+    height: 400px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px; 
+    margin: 0px;
+}
+div .navegacion{
+	bottom: 10px;
+	left: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+}
+ 
+div .navegacion li{
+	list-style: none;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 2px;
+	background: #eee;
+	padding: 3px 3px 0;
+	opacity: 0.65;
+	transition: 0.6s;
+}
+ 
+div .navegacion li:hover{
+	opacity: 1;
+	background: #fff;
+}
+ 
+div .navegacion li img{
+	width: 150px;
+	transition: 0.6s;
+}
+ 
+div .navegacion li img:hover{
+	width: 200px;
 }
 
 body.-dark
@@ -97,7 +151,7 @@ header
     padding: 0;
     border-style: none;
     background-color: transparent;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 
     cursor: pointer;
     transition: all 0.2s ease;
@@ -106,7 +160,7 @@ header
 
 .project:hover
 {
-    filter: grayscale(0%);
+    filter: blur(3px);
 }
 
 .project img
@@ -133,6 +187,7 @@ header
     align-items: center;
 }
 
+
 div
 {
     width: 100%;
@@ -142,16 +197,6 @@ div
 {
     background-color: rgba(255, 255, 255, 0.363);
 }
-
-video
-{
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-
 
 #footer
 {   

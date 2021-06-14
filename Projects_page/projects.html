@@ -16,12 +16,26 @@
             </nav>
         </header>
         <main id = "Wrapper">
-            <div>
-                <video controls  poster="video_p.png">
-                    <source src="Portfolio_TanyaBricker.mp4" type="video/mp4">
+            <div class="container">
+                <video id="slider" autoplay loop muted>
+                    <source src="TanyaBricker_GameDesign-DemoReel.mp4" type="video/mp4">		
                 </video>
+            <ul class="navegacion">
+                <li onclick="cargarVideo('TanyaBricker_GameDesign-DemoReel.mp4');">
+                    <img src="portada_gamedesign.PNG">
+                </li>
+                <li onclick="cargarVideo('TanyaBricker_Programming-DemoReel.mp4');">
+                    <img src="portada_programming.PNG">
+                </li>
+            </ul>
             </div>
+            
+            </script>
             <div class = "projects_img">
+                <section>
+                    <button class="project"><a href= "../Project11/project11.html"><img src="p11.png"/></a></button>
+                    <button class="project"><a href= "../Project12/project12.html"><img src="p12.png"/></a></button> 
+               </section>
                <section>
                     <button class="project"><a href= "../Project1/project1.html"><img src="p1.png"/></a></button>
                     <button class="project"><a href= "../Project2/project2.html"><img src="p2.png"/></a></button> 
@@ -49,4 +63,5 @@
            <button class="s2"> <a href="https://twitter.com/brick_tan" target="_blank"><img  src="tw.png"/></a></button>
         </footer>
     </body>
+     
 </html>

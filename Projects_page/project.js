@@ -1,3 +1,8 @@
+function cargarVideo(url)
+{
+    document.getElementById('slider').src=url;
+}
+
 function App()
 {
     
@@ -41,6 +46,7 @@ function App()
     });
 }
 
+	 
 
 
 document.addEventListener('DOMContentLoaded', App);

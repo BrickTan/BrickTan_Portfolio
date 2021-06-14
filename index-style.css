@@ -29,7 +29,7 @@
 
 body
 {
-    background-color: var(--color-blue1); 
+    background-color: var(--color-white); 
     min-width: 1000px;
     display: flex;
     flex-flow:column;
@@ -45,19 +45,21 @@ body
 h1
 {
     margin: 0;
-    font-family: 'Holtwood One SC', serif;
+    font-family: 'Passion One', cursive;
     color: var(--color-blue3);
-    text-shadow: 3px 3px rgb(2, 60, 167);
-    font-size: 70px;
+    font-size: 90px;
+    text-align: center;
+    align-items: center;
 }
 
 h2
 {
     margin: 0;
     color: var(--color-yellow);
-    text-shadow: 2px 2px 5px rgb(196, 143, 0);
-    font-family: 'Patrick Hand', cursive;
-    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
 }
 #Wrapper
 {
@@ -68,12 +70,13 @@ h2
 
     display: flex;
     flex-flow:row;
-    
+    min-height: 100vh;
     
     
     align-items: center;
     justify-content: space-between;
 }
+
 
 div
 {
@@ -103,6 +106,8 @@ img
 
 #footer
 {
+
+    margin-top: 100px;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -170,6 +175,7 @@ button
     display: flex;
     flex-flow:column;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .b1, .b2, .b3
 {
@@ -181,9 +187,9 @@ button
     margin-top: var(--margin-06);
     padding: 10px;
 
-    font-size: 30px;
+    font-size: 25px;
     color: var(--color-white);
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Open Sans', sans-serif;
 
     cursor: pointer;
     transition: all 0.2s ease;
